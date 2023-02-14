@@ -1,4 +1,4 @@
-name:  leanr-github-actions
+name:  leanr-github-actions-20230214
 run-name:  ${{ github.actor }} is learning GitHub Actions
 on:  [push]
 jobs:
