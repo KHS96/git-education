@@ -1,0 +1,13 @@
+name:  github-actions-yaml2-20230214
+run-name:  ${{ github.actor }} second yml file
+on:  [push]
+jobs:
+  check-bats-version:
+    runs-on:  ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - uses: actions/setup-node@v3
+        with:
+          node-version: '14'
+      - run: npm install -g bats
+      - run: bats -v
